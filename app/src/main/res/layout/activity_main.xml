@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="6.4"
+        android:background="#536E28"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#536E28">
+
+            <LinearLayout
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#536E28"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/gd38"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="삼팔광땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/gd18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="일팔광땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/gd13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="일삼광땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/dd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(장~삥) 땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/al"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="알리"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="독사"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/gb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="구삥"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/jb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="장삥"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/js"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="장사"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/sl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="세륙"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/go"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="갑오"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/gg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(팔~일) 끗"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/mt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="망통"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="암행어사"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="땡잡이"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/mg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="멍텅구리 구사 (재경기)"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/gs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="구사 (재경기)"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/matrixLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#536E28"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/firstLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/january1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/february1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/march1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/april1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/may1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/june1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/july1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/august1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/september1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/october1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/thirdLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/january2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/february2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/march2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/april2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/may2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fourthLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/june2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/july2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/august2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/september2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/october2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="#324B18"
+        android:text="족보 확인"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#536E28"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="패를 선택해 주세요"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/trans2" />
+
+            <ImageView
+                android:id="@+id/select2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/trans2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
