@@ -1,6 +1,7 @@
 package com.example.sutda;
 
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,11 +24,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final ImageView imageview1 = findViewById(R.id.select);
-        final ImageView imageview2 = findViewById(R.id.select2);
+        final Button checkButton = findViewById(R.id.check_button);
+        final TextView resultText = findViewById(R.id.result);
 
-        final TextView result_text = findViewById(R.id.result);
-        final Button check_button = findViewById(R.id.check_button);
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+
+        final LinearLayout matrixLinear = findViewById(R.id.matrixLinear);
+        final LinearLayout list = findViewById(R.id.list);
 
         final ImageButton january1 = findViewById(R.id.imageButton1);
         final ImageButton february1 = findViewById(R.id.imageButton2);
@@ -50,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
         final ImageButton september2 = findViewById(R.id.imageButton19);
         final ImageButton october2 = findViewById(R.id.imageButton20);
 
-        final LinearLayout matrixLinear = findViewById(R.id.matrixLinear);
-
         final TextView gd38 = findViewById(R.id.gd38);
         final TextView gd18 = findViewById(R.id.gd18);
         final TextView gd13 = findViewById(R.id.gd13);
@@ -70,138 +72,127 @@ public class MainActivity extends AppCompatActivity {
         final TextView mg = findViewById(R.id.mg);
         final TextView gs = findViewById(R.id.gs);
 
-        final LinearLayout list = findViewById(R.id.list);
-
-        final TextView result = findViewById(R.id.result);
 
         list.setVisibility(View.INVISIBLE);
+        resultText.setSelected(true);
 
-
-        result.setSelected(true);
-
-
-
-
-        // check button click
-        check_button.setOnClickListener(new View.OnClickListener() {
+        // checkButton clicked
+        checkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 if (sum != 0 && clickCount == 2) {
-
-                    result_text.setVisibility(View.VISIBLE);
+                    resultText.setVisibility(View.VISIBLE);
 
                     if (sum == 2) {
-                        result_text.setText("삥땡");
+                        resultText.setText("삥땡");
                     } else if (sum == 3) {
-                        result_text.setText("알리");
+                        resultText.setText("알리");
                     } else if (sum == 4) {
                         if (nums[0].equals("february1") || nums[0].equals("february2")) {
-                            result_text.setText("이땡");
+                            resultText.setText("이땡");
                         } else if ((nums[0].equals("january1")) && nums[1].equals("march1") || (nums[1].equals("january1")) && nums[0].equals("march1")) {
-                            result_text.setText("일삼광땡");
+                            resultText.setText("일삼광땡");
                         } else {
-                            result_text.setText("사끗");
+                            resultText.setText("사끗");
                         }
                     } else if (sum == 5) {
                         if ((nums[0].equals("january1") || nums[0].equals("january2")) || (nums[0].equals("april1") || nums[0].equals("april2"))) {
-                            result_text.setText("독사");
+                            resultText.setText("독사");
                         } else {
-                            result_text.setText("오끗");
+                            resultText.setText("오끗");
                         }
                     } else if (sum == 6) {
                         if (nums[0].equals("march1") || nums[0].equals("march2")) {
-                            result_text.setText("삼땡");
+                            resultText.setText("삼땡");
                         } else {
-                            result_text.setText("육끗");
+                            resultText.setText("육끗");
                         }
                     } else if (sum == 7) {
-                        result_text.setText("칠끗");
+                        resultText.setText("칠끗");
                     } else if (sum == 8) {
                         if (nums[0].equals("april1") || nums[0].equals("april2")) {
-                            result_text.setText("사땡");
+                            resultText.setText("사땡");
                         } else {
-                            result_text.setText("팔끗");
+                            resultText.setText("팔끗");
                         }
                     } else if (sum == 9) {
                         if ((nums[0].equals("january1") && nums[1].equals("august1")) || nums[0].equals("august1") && nums[1].equals("january1")) {
-                            result_text.setText("일팔광땡");
+                            resultText.setText("일팔광땡");
                         } else {
-                            result_text.setText("갑오");
+                            resultText.setText("갑오");
                         }
                     } else if (sum == 10) {
                         if (nums[0].equals("may1") || nums[0].equals("may2")) {
-                            result_text.setText("오땡");
+                            resultText.setText("오땡");
                         } else if ((nums[0].equals("april1") || nums[0].equals("april2")) || (nums[0].equals("june1") || nums[0].equals("june2"))) {
-                            result_text.setText("세륙");
+                            resultText.setText("세륙");
                         } else if ((nums[0].equals("january1") || nums[0].equals("january2")) || (nums[0].equals("september1") || nums[0].equals("september2"))) {
-                            result_text.setText("구삥");
+                            resultText.setText("구삥");
                         } else if ((nums[0].equals("march1") || nums[0].equals("march2")) || (nums[0].equals("july1") || nums[0].equals("july2"))) {
-                            result_text.setText("땡잡이");
+                            resultText.setText("땡잡이");
                         } else {
-                            result_text.setText("망통");
+                            resultText.setText("망통");
                         }
                     } else if (sum == 11) {
                         if ((nums[0].equals("march1") && nums[1].equals("august1")) || nums[0].equals("august1") && nums[1].equals("march1")) {
-                            result_text.setText("삼팔광땡");
+                            resultText.setText("삼팔광땡");
                         } else if ((nums[0].equals("january1") || nums[0].equals("january2")) || (nums[0].equals("october1") || nums[0].equals("october2"))) {
-                            result_text.setText("장삥");
+                            resultText.setText("장삥");
                         } else if ((nums[0].equals("april1") && nums[1].equals("july1")) || nums[0].equals("july1") && nums[1].equals("april1")) {
-                            result_text.setText("암행어사");
+                            resultText.setText("암행어사");
                         } else {
-                            result_text.setText("일끗");
+                            resultText.setText("일끗");
                         }
                     } else if (sum == 12) {
                         if (nums[0].equals("june1") || nums[0].equals("june2")) {
-                            result_text.setText("육땡");
+                            resultText.setText("육땡");
                         } else {
-                            result_text.setText("이끗");
+                            resultText.setText("이끗");
                         }
                     } else if (sum == 13) {
                         if ((nums[0].equals("april1") || nums[0].equals("april2")) || (nums[0].equals("september1") || nums[0].equals("september2"))) {
                             if ((nums[0].equals("april1") && nums[1].equals("september1")) || (nums[0].equals("september1") && nums[1].equals("april1"))) {
-                                result_text.setText("멍텅구리 구사");
+                                resultText.setText("멍텅구리 구사");
                             } else {
-                                result_text.setText("구사");
+                                resultText.setText("구사");
                             }
                         } else {
-                            result_text.setText("삼끗");
+                            resultText.setText("삼끗");
                         }
                     } else if (sum == 14) {
                         if (nums[0].equals("july1") || nums[0].equals("july2")) {
-                            result_text.setText("칠땡");
+                            resultText.setText("칠땡");
                         } else if ((nums[0].equals("april1") || nums[0].equals("april2")) || (nums[0].equals("october1") || nums[0].equals("october2"))) {
-                            result_text.setText("장사");
+                            resultText.setText("장사");
                         } else {
-                            result_text.setText("사끗");
+                            resultText.setText("사끗");
                         }
                     } else if (sum == 15) {
-                        result_text.setText("오끗");
+                        resultText.setText("오끗");
                     } else if (sum == 16) {
                         if (nums[0].equals("august1") || nums[0].equals("august2")) {
-                            result_text.setText("팔땡");
+                            resultText.setText("팔땡");
                         } else {
-                            result_text.setText("육끗");
+                            resultText.setText("육끗");
                         }
                     } else if (sum == 17) {
-                        result_text.setText("칠끗");
+                        resultText.setText("칠끗");
                     } else if (sum == 18) {
                         if (nums[0].equals("september1") || nums[0].equals("september2")) {
-                            result_text.setText("구땡");
+                            resultText.setText("구땡");
                         } else {
-                            result_text.setText("팔끗");
+                            resultText.setText("팔끗");
                         }
                     } else if (sum == 19) {
-                        result_text.setText("갑오");
+                        resultText.setText("갑오");
                     } else {
-                        result_text.setText("장땡");
+                        resultText.setText("장땡");
                     }
-
 
                     matrixLinear.setVisibility(View.INVISIBLE);
                     list.setVisibility(View.VISIBLE);
-
-                    String name = result_text.getText().toString();
+                    String name = resultText.getText().toString();
 
                     if (name.equals("삼팔광땡")) {
                         gd38.setTextColor(Color.RED);
@@ -270,13 +261,8 @@ public class MainActivity extends AppCompatActivity {
                     } else if (name.equals("구사")) {
                         gs.setTextColor(Color.RED);
                     }
-
-
-
-                    check_button.setText("돌아가기");
-
-
-                    //initial
+                    // initialization
+                    checkButton.setText("돌아가기");
                     sum = 0;
                     first = 1;
                     nums[0] = " ";
@@ -286,88 +272,29 @@ public class MainActivity extends AppCompatActivity {
 
                 else if (sum != 0 && clickCount == 1) {
                     clickCount = 0;
-                    imageview1.setImageResource(R.drawable.trans2);
-                    imageview2.setImageResource(R.drawable.trans2);
+                    firstSelected.setImageResource(R.drawable.trans2);
+                    secondSelected.setImageResource(R.drawable.trans2);
                     sum = 0;
                     first = 1;
                     nums[0] = " ";
                     nums[1] = " ";
                     Toast.makeText(getApplicationContext(), "두개의 패를 선택하세요", Toast.LENGTH_SHORT).show();
 
-                    january1.setEnabled(true);
-                    february1.setEnabled(true);
-                    march1.setEnabled(true);
-                    april1.setEnabled(true);
-                    may1.setEnabled(true);
-                    june1.setEnabled(true);
-                    july1.setEnabled(true);
-                    august1.setEnabled(true);
-                    september1.setEnabled(true);
-                    october1.setEnabled(true);
-                    january2.setEnabled(true);
-                    february2.setEnabled(true);
-                    march2.setEnabled(true);
-                    april2.setEnabled(true);
-                    may2.setEnabled(true);
-                    june2.setEnabled(true);
-                    july2.setEnabled(true);
-                    august2.setEnabled(true);
-                    september2.setEnabled(true);
-                    october2.setEnabled(true);
-
-                    january1.setAlpha(255);
-                    february1.setAlpha(255);
-                    march1.setAlpha(255);
-                    april1.setAlpha(255);
-                    may1.setAlpha(255);
-                    june1.setAlpha(255);
-                    july1.setAlpha(255);
-                    august1.setAlpha(255);
-                    september1.setAlpha(255);
-                    october1.setAlpha(255);
-                    january2.setAlpha(255);
-                    february2.setAlpha(255);
-                    march2.setAlpha(255);
-                    april2.setAlpha(255);
-                    may2.setAlpha(255);
-                    june2.setAlpha(255);
-                    july2.setAlpha(255);
-                    august2.setAlpha(255);
-                    september2.setAlpha(255);
-                    october2.setAlpha(255);
+                    setAllButtonEnabled(january1, february1, march1, april1, may1, june1, july1, august1, september1, october1, january2, february2, march2, april2, may2, june2, july2, august2, september2, october2);
+                    setAllButtonAlphaTo255(january1, february1, march1, april1, may1, june1, july1, august1, september1, october1, january2, february2, march2, april2, may2, june2, july2, august2, september2, october2);
                 }
 
                 else {
-                    january1.setAlpha(255);
-                    february1.setAlpha(255);
-                    march1.setAlpha(255);
-                    april1.setAlpha(255);
-                    may1.setAlpha(255);
-                    june1.setAlpha(255);
-                    july1.setAlpha(255);
-                    august1.setAlpha(255);
-                    september1.setAlpha(255);
-                    october1.setAlpha(255);
-                    january2.setAlpha(255);
-                    february2.setAlpha(255);
-                    march2.setAlpha(255);
-                    april2.setAlpha(255);
-                    may2.setAlpha(255);
-                    june2.setAlpha(255);
-                    july2.setAlpha(255);
-                    august2.setAlpha(255);
-                    september2.setAlpha(255);
-                    october2.setAlpha(255);
-
+                    setAllButtonAlphaTo255(january1, february1, march1, april1, may1, june1, july1, august1, september1, october1, january2, february2, march2, april2, may2, june2, july2, august2, september2, october2);
 
                     matrixLinear.setVisibility(View.VISIBLE);
                     list.setVisibility(View.INVISIBLE);
 
-                    check_button.setText("족보 확인");
-                    result_text.setText("패를 선택해 주세요");
+                    checkButton.setText("족보 확인");
+                    resultText.setText("패를 선택해 주세요");
 
-                    imageview1.setImageResource(R.drawable.trans2);
-                    imageview2.setImageResource(R.drawable.trans2);
+                    firstSelected.setImageResource(R.drawable.trans2);
+                    secondSelected.setImageResource(R.drawable.trans2);
 
                     gd38.setTextColor(Color.WHITE);
                     gd18.setTextColor(Color.WHITE);
@@ -387,413 +314,204 @@ public class MainActivity extends AppCompatActivity {
                     mg.setTextColor(Color.WHITE);
                     gs.setTextColor(Color.WHITE);
 
-
-                    january1.setEnabled(true);
-                    february1.setEnabled(true);
-                    march1.setEnabled(true);
-                    april1.setEnabled(true);
-                    may1.setEnabled(true);
-                    june1.setEnabled(true);
-                    july1.setEnabled(true);
-                    august1.setEnabled(true);
-                    september1.setEnabled(true);
-                    october1.setEnabled(true);
-                    january2.setEnabled(true);
-                    february2.setEnabled(true);
-                    march2.setEnabled(true);
-                    april2.setEnabled(true);
-                    may2.setEnabled(true);
-                    june2.setEnabled(true);
-                    july2.setEnabled(true);
-                    august2.setEnabled(true);
-                    september2.setEnabled(true);
-                    october2.setEnabled(true);
+                    setAllButtonEnabled(january1, february1, march1, april1, may1, june1, july1, august1, september1, october1, january2, february2, march2, april2, may2, june2, july2, august2, september2, october2);
                 }
 
             }
         });
 
 
-        // each month click
+        // each month clicked
         january1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    january1.setEnabled(false);
-                    clickCount += 1;
-                    january1.setAlpha(80);
-                    sum += 1;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.january1);
-                        nums[0] = "january1";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.january1);
-                        nums[1] = "january1";
-                    }
-                }
+                EachMonthClicked(january1, "january1", 1, firstSelected, secondSelected);
             }
         });
         february1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    february1.setEnabled(false);
-                    clickCount += 1;
-                    february1.setAlpha(80);
-                    sum += 2;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.february1);
-                        nums[0] = "february1";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.february1);
-                        nums[1] = "february1";
-                    }
-                }
+                EachMonthClicked(february1, "february1", 2, firstSelected, secondSelected);
             }
         });
         march1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    march1.setEnabled(false);
-                    clickCount += 1;
-                    march1.setAlpha(80);
-                    sum += 3;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.march1);
-                        nums[0] = "march1";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.march1);
-                        nums[1] = "march1";
-
-                    }}
+                EachMonthClicked(march1, "march1", 3, firstSelected, secondSelected);
             }
         });
         april1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    april1.setEnabled(false);
-                    clickCount += 1;
-                    april1.setAlpha(80);
-                    sum += 4;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.april1);
-                        nums[0] = "april1";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.april1);
-                        nums[1] = "april1";
-
-                    }}
+                EachMonthClicked(april1, "april1", 4, firstSelected, secondSelected);
             }
         });
         may1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    may1.setEnabled(false);
-                    clickCount += 1;
-                    may1.setAlpha(80);
-                    sum += 5;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.may1);
-                        nums[0] = "may1";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.may1);
-                        nums[1] = "may1";
-
-                    }      }
+                EachMonthClicked(may1, "may1", 5, firstSelected, secondSelected);
             }
         });
         june1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    june1.setEnabled(false);
-                    clickCount += 1;
-                    june1.setAlpha(80);
-                    sum += 6;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.june1);
-                        nums[0] = "june1";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.june1);
-                        nums[1] = "june1";
-
-                    }     }
+                EachMonthClicked(june1, "june1", 6, firstSelected, secondSelected);
             }
         });
         july1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    july1.setEnabled(false);
-                    clickCount += 1;
-                    july1.setAlpha(80);
-                    sum += 7;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.july1);
-                        nums[0] = "july1";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.july1);
-                        nums[1] = "july1";
-
-                    }     }
+                EachMonthClicked(july1, "july1", 7, firstSelected, secondSelected);
             }
         });
         august1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    august1.setEnabled(false);
-                    clickCount += 1;
-                    august1.setAlpha(80);
-                    sum += 8;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.august1);
-                        nums[0] = "august1";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.august1);
-                        nums[1] = "august1";
-                    }
-                }
+                EachMonthClicked(august1, "august1", 8, firstSelected, secondSelected);
             }
         });
         september1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    september1.setEnabled(false);
-                    clickCount += 1;
-                    september1.setAlpha(80);
-                    sum += 9;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.september1);
-                        nums[0] = "september1";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.september1);
-                        nums[1] = "september1";
-                    }
-                }
+                EachMonthClicked(september1, "september1", 9, firstSelected, secondSelected);
             }
         });
         october1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    october1.setEnabled(false);
-                    clickCount += 1;
-                    october1.setAlpha(80);
-                    sum += 10;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.october1);
-                        nums[0] = "october1";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.october1);
-                        nums[1] = "october1";
-                    }
-                }
+                EachMonthClicked(october1, "october1", 10, firstSelected, secondSelected);
             }
         });
         january2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    january2.setEnabled(false);
-                    clickCount += 1;
-                    january2.setAlpha(80);
-                    sum += 1;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.january2);
-                        nums[0] = "january2";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.january2);
-                        nums[1] = "january2";
-                    }
-                }
+                EachMonthClicked(january2, "january2", 1, firstSelected, secondSelected);
             }
         });
         february2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    february2.setEnabled(false);
-                    clickCount += 1;
-                    february2.setAlpha(80);
-                    sum += 2;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.february2);
-                        nums[0] = "february2";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.february2);
-                        nums[1] = "february2";
-                    }
-                }
+                EachMonthClicked(february2, "february2", 2, firstSelected, secondSelected);
             }
         });
         march2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    march2.setEnabled(false);
-                    clickCount += 1;
-                    march2.setAlpha(80);
-                    sum += 3;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.march2);
-                        nums[0] = "march2";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.march2);
-                        nums[1] = "march2";
-
-                    }}
+                EachMonthClicked(march2, "march2", 3, firstSelected, secondSelected);
             }
         });
         april2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    april2.setEnabled(false);
-                    clickCount += 1;
-                    april2.setAlpha(80);
-                    sum += 4;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.april2);
-                        nums[0] = "april2";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.april2);
-                        nums[1] = "april2";
-
-                    }}
+                EachMonthClicked(april2, "april2", 4, firstSelected, secondSelected);
             }
         });
         may2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    may2.setEnabled(false);
-                    clickCount += 1;
-                    may2.setAlpha(80);
-                    sum += 5;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.may2);
-                        nums[0] = "may2";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.may2);
-                        nums[1] = "may2";
-
-                    }      }
+                EachMonthClicked(may2, "may2", 5, firstSelected, secondSelected);
             }
         });
         june2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    june2.setEnabled(false);
-                    clickCount += 1;
-                    june2.setAlpha(80);
-                    sum += 6;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.june2);
-                        nums[0] = "june2";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.june2);
-                        nums[1] = "june2";
-
-                    }     }
+                EachMonthClicked(june2, "june2", 6, firstSelected, secondSelected);
             }
         });
         july2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    july2.setEnabled(false);
-                    clickCount += 1;
-                    july2.setAlpha(80);
-                    sum += 7;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.july2);
-                        nums[0] = "july2";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.july2);
-                        nums[1] = "july2";
-
-                    }     }
+                EachMonthClicked(july2, "july2", 7, firstSelected, secondSelected);
             }
         });
         august2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    august2.setEnabled(false);
-                    clickCount += 1;
-                    august2.setAlpha(80);
-                    sum += 8;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.august2);
-                        nums[0] = "august2";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.august2);
-                        nums[1] = "august2";
-                    }
-                }
+                EachMonthClicked(august2, "august2", 8, firstSelected, secondSelected);
             }
         });
         september2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    september2.setEnabled(false);
-                    clickCount += 1;
-                    september2.setAlpha(80);
-                    sum += 9;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.september2);
-                        nums[0] = "september2";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.september2);
-                        nums[1] = "september2";
-                    }
-                }
+                EachMonthClicked(september2, "september2", 9, firstSelected, secondSelected);
             }
         });
         october2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (clickCount < 2) {
-                    october2.setEnabled(false);
-                    clickCount += 1;
-                    october2.setAlpha(80);
-                    sum += 10;
-                    if (first == 1) {
-                        imageview1.setImageResource(R.drawable.october2);
-                        nums[0] = "october2";
-                        first = 0;
-                    } else {
-                        imageview2.setImageResource(R.drawable.october2);
-                        nums[1] = "october2";
-                    }
-                }
+                EachMonthClicked(october2, "october2", 10, firstSelected, secondSelected);
             }
         });
+    }
+
+
+    void EachMonthClicked (ImageButton months, String month, int score, ImageView a, ImageView b) {
+        if (clickCount < 2) {
+            months.setEnabled(false);
+            clickCount += 1;
+            months.setAlpha(80);
+            sum += score;
+
+            int resId = getResources().getIdentifier(month, "drawable", getPackageName());
+            Drawable image = getResources().getDrawable(resId);
+
+            if (first == 1) {
+                a.setImageDrawable(image); // R.drawable.a   a를 인자로 못 받나?
+                nums[0] = month;
+                first = 0;
+            }
+            else {
+                b.setImageDrawable(image);
+                nums[1] = month;
+            }
+        }
+    }
+
+    void setAllButtonEnabled(ImageButton january1, ImageButton february1, ImageButton march1, ImageButton april1, ImageButton may1, ImageButton june1, ImageButton july1, ImageButton august1, ImageButton september1, ImageButton october1,
+                          ImageButton january2, ImageButton february2, ImageButton march2, ImageButton april2, ImageButton may2, ImageButton june2, ImageButton july2, ImageButton august2, ImageButton september2, ImageButton october2) {
+        january1.setEnabled(true);
+        february1.setEnabled(true);
+        march1.setEnabled(true);
+        april1.setEnabled(true);
+        may1.setEnabled(true);
+        june1.setEnabled(true);
+        july1.setEnabled(true);
+        august1.setEnabled(true);
+        september1.setEnabled(true);
+        october1.setEnabled(true);
+        january2.setEnabled(true);
+        february2.setEnabled(true);
+        march2.setEnabled(true);
+        april2.setEnabled(true);
+        may2.setEnabled(true);
+        june2.setEnabled(true);
+        july2.setEnabled(true);
+        august2.setEnabled(true);
+        september2.setEnabled(true);
+        october2.setEnabled(true);
+    }
+
+    void setAllButtonAlphaTo255(ImageButton january1, ImageButton february1, ImageButton march1, ImageButton april1, ImageButton may1, ImageButton june1, ImageButton july1, ImageButton august1, ImageButton september1, ImageButton october1,
+                                ImageButton january2, ImageButton february2, ImageButton march2, ImageButton april2, ImageButton may2, ImageButton june2, ImageButton july2, ImageButton august2, ImageButton september2, ImageButton october2) {
+        january1.setAlpha(255);
+        february1.setAlpha(255);
+        march1.setAlpha(255);
+        april1.setAlpha(255);
+        may1.setAlpha(255);
+        june1.setAlpha(255);
+        july1.setAlpha(255);
+        august1.setAlpha(255);
+        september1.setAlpha(255);
+        october1.setAlpha(255);
+        january2.setAlpha(255);
+        february2.setAlpha(255);
+        march2.setAlpha(255);
+        april2.setAlpha(255);
+        may2.setAlpha(255);
+        june2.setAlpha(255);
+        july2.setAlpha(255);
+        august2.setAlpha(255);
+        september2.setAlpha(255);
+        october2.setAlpha(255);
     }
 }
