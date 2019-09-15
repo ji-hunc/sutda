@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
     int first = 1;
     String[] nums = new String[2];
     int clickCount = 0;
+    ImageView firstImageButton;
+    ImageView secondImageButton;
+    int firstScore = 0;
+    int secondScore = 0;
 
 
     @Override
@@ -442,10 +446,60 @@ public class MainActivity extends AppCompatActivity {
                 EachMonthClicked(october2, "october2", 10, firstSelected, secondSelected);
             }
         });
+        firstSelected.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (clickCount == 1) {
+                    firstSelected.setImageResource(R.drawable.trans2);
+                    firstImageButton.setAlpha(255);
+                    clickCount -= 1;
+                    sum -= firstScore;
+                    nums[0] = " ";
+                    firstImageButton.setEnabled(true);
+                    firstSelected.setEnabled(false);
+                    first = 1;  // like first time
+                }
+                else if (clickCount == 2) {
+                    firstSelected.setImageResource(R.drawable.trans2);
+                    firstImageButton.setAlpha(255);
+                    clickCount -= 1;
+                    sum -= firstScore;
+                    nums[0] = " ";;
+                    firstImageButton.setEnabled(true);
+                    firstSelected.setEnabled(false);
+                    first = 1; // like second time
+                }
+            }
+        });
+        secondSelected.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (clickCount == 1) {
+                    secondSelected.setImageResource(R.drawable.trans2);
+                    secondImageButton.setAlpha(255);
+                    clickCount -= 1;
+                    sum -= secondScore;
+                    nums[1] = " ";
+                    secondImageButton.setEnabled(true);
+                    secondSelected.setEnabled(false);
+                    first = 1; // like second time
+                }
+                else if (clickCount == 2) {
+                    secondSelected.setImageResource(R.drawable.trans2);
+                    secondImageButton.setAlpha(255);
+                    clickCount -= 1;
+                    sum -= secondScore;
+                    nums[1] = " ";
+                    secondImageButton.setEnabled(true);
+                    secondSelected.setEnabled(false);
+                    first = 0; // like second time
+                }
+            }
+        });
     }
 
 
-    void EachMonthClicked (ImageButton months, String month, int score, ImageView a, ImageView b) {
+    void EachMonthClicked (ImageButton months, String month, int score, ImageView firstSelect, ImageView secondSelect) {
         if (clickCount < 2) {
             months.setEnabled(false);
             clickCount += 1;
@@ -456,13 +510,19 @@ public class MainActivity extends AppCompatActivity {
             Drawable image = getResources().getDrawable(resId);
 
             if (first == 1) {
-                a.setImageDrawable(image); // R.drawable.a   a를 인자로 못 받나?
+                firstSelect.setImageDrawable(image);
+                firstImageButton = months;
+                firstScore = score;
                 nums[0] = month;
                 first = 0;
+                firstSelect.setEnabled(true);
             }
             else {
-                b.setImageDrawable(image);
+                secondSelect.setImageDrawable(image);
+                secondImageButton = months;
+                secondScore = score;
                 nums[1] = month;
+                secondSelect.setEnabled(true);
             }
         }
     }
