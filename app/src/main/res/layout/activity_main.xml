@@ -207,57 +207,62 @@
 
 
                     <ImageButton
-                        android:id="@+id/imageButton1"
+                        android:id="@+id/january1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickJanuary1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/january1" />
 
                     <ImageButton
-                        android:id="@+id/imageButton2"
+                        android:id="@+id/february1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickFebruary1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/february1" />
 
                     <ImageButton
-                        android:id="@+id/imageButton3"
+                        android:id="@+id/march1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickMarch1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/march1" />
 
                     <ImageButton
-                        android:id="@+id/imageButton4"
+                        android:id="@+id/april1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickApril1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/april1" />
 
                     <ImageButton
-                        android:id="@+id/imageButton5"
+                        android:id="@+id/may1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickMay1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/may1" />
 
@@ -273,57 +278,62 @@
 
 
                     <ImageButton
-                        android:id="@+id/imageButton11"
+                        android:id="@+id/january2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickJanuary2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/january2" />
 
                     <ImageButton
-                        android:id="@+id/imageButton12"
+                        android:id="@+id/february2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickFebruary2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/february2" />
 
                     <ImageButton
-                        android:id="@+id/imageButton13"
+                        android:id="@+id/march2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickMarch2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/march2" />
 
                     <ImageButton
-                        android:id="@+id/imageButton14"
+                        android:id="@+id/april2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickApril2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/april2" />
 
                     <ImageButton
-                        android:id="@+id/imageButton15"
+                        android:id="@+id/may2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickMay2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/may2" />
 
@@ -339,57 +349,62 @@
 
 
                     <ImageButton
-                        android:id="@+id/imageButton6"
+                        android:id="@+id/june1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickJune1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/june1" />
 
                     <ImageButton
-                        android:id="@+id/imageButton7"
+                        android:id="@+id/july1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickJuly1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/july1" />
 
                     <ImageButton
-                        android:id="@+id/imageButton8"
+                        android:id="@+id/august1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickAugust1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/august1" />
 
                     <ImageButton
-                        android:id="@+id/imageButton9"
+                        android:id="@+id/september1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickSeptember1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/september1" />
 
                     <ImageButton
-                        android:id="@+id/imageButton10"
+                        android:id="@+id/october1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickOctober1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/october1" />
 
@@ -406,57 +421,62 @@
 
 
                     <ImageButton
-                        android:id="@+id/imageButton16"
+                        android:id="@+id/june2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickJune2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/june2" />
 
                     <ImageButton
-                        android:id="@+id/imageButton17"
+                        android:id="@+id/july2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickJuly2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/july2" />
 
                     <ImageButton
-                        android:id="@+id/imageButton18"
+                        android:id="@+id/august2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickAugust2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/august2" />
 
                     <ImageButton
-                        android:id="@+id/imageButton19"
+                        android:id="@+id/september2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickSeptember2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/september2" />
 
                     <ImageButton
-                        android:id="@+id/imageButton20"
+                        android:id="@+id/october2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#00FFFFFF"
+                        android:onClick="clickOctober2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/october2" />
 

@@ -41,26 +41,26 @@ public class MainActivity extends AppCompatActivity {
         final LinearLayout matrixLinear = findViewById(R.id.matrixLinear);
         final LinearLayout list = findViewById(R.id.list);
 
-        final ImageButton january1 = findViewById(R.id.imageButton1);
-        final ImageButton february1 = findViewById(R.id.imageButton2);
-        final ImageButton march1 = findViewById(R.id.imageButton3);
-        final ImageButton april1 = findViewById(R.id.imageButton4);
-        final ImageButton may1 = findViewById(R.id.imageButton5);
-        final ImageButton june1 = findViewById(R.id.imageButton6);
-        final ImageButton july1 = findViewById(R.id.imageButton7);
-        final ImageButton august1 = findViewById(R.id.imageButton8);
-        final ImageButton september1 = findViewById(R.id.imageButton9);
-        final ImageButton october1 = findViewById(R.id.imageButton10);
-        final ImageButton january2 = findViewById(R.id.imageButton11);
-        final ImageButton february2 = findViewById(R.id.imageButton12);
-        final ImageButton march2 = findViewById(R.id.imageButton13);
-        final ImageButton april2 = findViewById(R.id.imageButton14);
-        final ImageButton may2 = findViewById(R.id.imageButton15);
-        final ImageButton june2 = findViewById(R.id.imageButton16);
-        final ImageButton july2 = findViewById(R.id.imageButton17);
-        final ImageButton august2 = findViewById(R.id.imageButton18);
-        final ImageButton september2 = findViewById(R.id.imageButton19);
-        final ImageButton october2 = findViewById(R.id.imageButton20);
+        final ImageButton january1 = findViewById(R.id.january1);
+        final ImageButton february1 = findViewById(R.id.february1);
+        final ImageButton march1 = findViewById(R.id.march1);
+        final ImageButton april1 = findViewById(R.id.april1);
+        final ImageButton may1 = findViewById(R.id.may1);
+        final ImageButton june1 = findViewById(R.id.june1);
+        final ImageButton july1 = findViewById(R.id.july1);
+        final ImageButton august1 = findViewById(R.id.august1);
+        final ImageButton september1 = findViewById(R.id.september1);
+        final ImageButton october1 = findViewById(R.id.october1);
+        final ImageButton january2 = findViewById(R.id.january2);
+        final ImageButton february2 = findViewById(R.id.february2);
+        final ImageButton march2 = findViewById(R.id.march2);
+        final ImageButton april2 = findViewById(R.id.april2);
+        final ImageButton may2 = findViewById(R.id.may2);
+        final ImageButton june2 = findViewById(R.id.june2);
+        final ImageButton july2 = findViewById(R.id.july2);
+        final ImageButton august2 = findViewById(R.id.august2);
+        final ImageButton september2 = findViewById(R.id.september2);
+        final ImageButton october2 = findViewById(R.id.october2);
 
         final TextView gd38 = findViewById(R.id.gd38);
         final TextView gd18 = findViewById(R.id.gd18);
@@ -330,126 +330,126 @@ public class MainActivity extends AppCompatActivity {
 
 
         // each month clicked
-        january1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(january1, "january1", 1, firstSelected, secondSelected);
-            }
-        });
-        february1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(february1, "february1", 2, firstSelected, secondSelected);
-            }
-        });
-        march1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(march1, "march1", 3, firstSelected, secondSelected);
-            }
-        });
-        april1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(april1, "april1", 4, firstSelected, secondSelected);
-            }
-        });
-        may1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(may1, "may1", 5, firstSelected, secondSelected);
-            }
-        });
-        june1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(june1, "june1", 6, firstSelected, secondSelected);
-            }
-        });
-        july1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(july1, "july1", 7, firstSelected, secondSelected);
-            }
-        });
-        august1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(august1, "august1", 8, firstSelected, secondSelected);
-            }
-        });
-        september1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(september1, "september1", 9, firstSelected, secondSelected);
-            }
-        });
-        october1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(october1, "october1", 10, firstSelected, secondSelected);
-            }
-        });
-        january2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(january2, "january2", 1, firstSelected, secondSelected);
-            }
-        });
-        february2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(february2, "february2", 2, firstSelected, secondSelected);
-            }
-        });
-        march2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(march2, "march2", 3, firstSelected, secondSelected);
-            }
-        });
-        april2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(april2, "april2", 4, firstSelected, secondSelected);
-            }
-        });
-        may2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(may2, "may2", 5, firstSelected, secondSelected);
-            }
-        });
-        june2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(june2, "june2", 6, firstSelected, secondSelected);
-            }
-        });
-        july2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(july2, "july2", 7, firstSelected, secondSelected);
-            }
-        });
-        august2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(august2, "august2", 8, firstSelected, secondSelected);
-            }
-        });
-        september2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(september2, "september2", 9, firstSelected, secondSelected);
-            }
-        });
-        october2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EachMonthClicked(october2, "october2", 10, firstSelected, secondSelected);
-            }
-        });
+//        january1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(january1, "january1", 1, firstSelected, secondSelected);
+//            }
+//        });
+//        february1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(february1, "february1", 2, firstSelected, secondSelected);
+//            }
+//        });
+//        march1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(march1, "march1", 3, firstSelected, secondSelected);
+//            }
+//        });
+//        april1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(april1, "april1", 4, firstSelected, secondSelected);
+//            }
+//        });
+//        may1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(may1, "may1", 5, firstSelected, secondSelected);
+//            }
+//        });
+//        june1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(june1, "june1", 6, firstSelected, secondSelected);
+//            }
+//        });
+//        july1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(july1, "july1", 7, firstSelected, secondSelected);
+//            }
+//        });
+//        august1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(august1, "august1", 8, firstSelected, secondSelected);
+//            }
+//        });
+//        september1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(september1, "september1", 9, firstSelected, secondSelected);
+//            }
+//        });
+//        october1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(october1, "october1", 10, firstSelected, secondSelected);
+//            }
+//        });
+//        january2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(january2, "january2", 1, firstSelected, secondSelected);
+//            }
+//        });
+//        february2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(february2, "february2", 2, firstSelected, secondSelected);
+//            }
+//        });
+//        march2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(march2, "march2", 3, firstSelected, secondSelected);
+//            }
+//        });
+//        april2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(april2, "april2", 4, firstSelected, secondSelected);
+//            }
+//        });
+//        may2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(may2, "may2", 5, firstSelected, secondSelected);
+//            }
+//        });
+//        june2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(june2, "june2", 6, firstSelected, secondSelected);
+//            }
+//        });
+//        july2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(july2, "july2", 7, firstSelected, secondSelected);
+//            }
+//        });
+//        august2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(august2, "august2", 8, firstSelected, secondSelected);
+//            }
+//        });
+//        september2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(september2, "september2", 9, firstSelected, secondSelected);
+//            }
+//        });
+//        october2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EachMonthClicked(october2, "october2", 10, firstSelected, secondSelected);
+//            }
+//        });
         firstSelected.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -577,5 +577,146 @@ public class MainActivity extends AppCompatActivity {
         august2.setAlpha(255);
         september2.setAlpha(255);
         october2.setAlpha(255);
+    }
+
+    public void clickJanuary1 (View v) {
+        final ImageButton january1 = findViewById(R.id.january1);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(january1, "january1", 1, firstSelected, secondSelected);
+    }
+    public void clickFebruary1 (View v) {
+        final ImageButton february1 = findViewById(R.id.february1);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(february1, "february1", 2, firstSelected, secondSelected);
+    }
+    public void clickMarch1 (View v) {
+        final ImageButton march1 = findViewById(R.id.march1);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(march1, "march1", 3, firstSelected, secondSelected);
+    }
+    public void clickApril1 (View v) {
+        final ImageButton april1 = findViewById(R.id.april1);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(april1, "april1", 4, firstSelected, secondSelected);
+    }
+    public void clickMay1 (View v) {
+        final ImageButton may1 = findViewById(R.id.may1);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(may1, "may1", 5, firstSelected, secondSelected);
+    }
+    public void clickJune1 (View v) {
+        final ImageButton june1 = findViewById(R.id.june1);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(june1, "june1", 6, firstSelected, secondSelected);
+    }
+    public void clickJuly1 (View v) {
+        final ImageButton july1 = findViewById(R.id.july1);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(july1, "july1", 7, firstSelected, secondSelected);
+    }
+    public void clickAugust1 (View v) {
+        final ImageButton august1 = findViewById(R.id.august1);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(august1, "august1", 8, firstSelected, secondSelected);
+    }
+    public void clickSeptember1 (View v) {
+        final ImageButton september1 = findViewById(R.id.september1);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(september1, "september1", 9, firstSelected, secondSelected);
+    }
+    public void clickOctober1 (View v) {
+        final ImageButton october1 = findViewById(R.id.october1);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(october1, "october1", 10, firstSelected, secondSelected);
+    }
+    public void clickJanuary2 (View v) {
+        final ImageButton january2 = findViewById(R.id.january2);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(january2, "january2", 1, firstSelected, secondSelected);
+    }
+    public void clickFebruary2 (View v) {
+        final ImageButton february2 = findViewById(R.id.february2);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(february2, "february2", 2, firstSelected, secondSelected);
+    }
+    public void clickMarch2 (View v) {
+        final ImageButton march2 = findViewById(R.id.march2);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(march2, "march2", 3, firstSelected, secondSelected);
+    }
+    public void clickApril2 (View v) {
+        final ImageButton april2 = findViewById(R.id.april2);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(april2, "april2", 4, firstSelected, secondSelected);
+    }
+    public void clickMay2 (View v) {
+        final ImageButton may2 = findViewById(R.id.may2);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(may2, "may2", 5, firstSelected, secondSelected);
+    }
+    public void clickJune2 (View v) {
+        final ImageButton june2 = findViewById(R.id.june2);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(june2, "june2", 6, firstSelected, secondSelected);
+    }
+    public void clickJuly2 (View v) {
+        final ImageButton july2 = findViewById(R.id.july2);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(july2, "july2", 7, firstSelected, secondSelected);
+    }
+    public void clickAugust2 (View v) {
+        final ImageButton august2 = findViewById(R.id.august2);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(august2, "august2", 8, firstSelected, secondSelected);
+    }
+    public void clickSeptember2 (View v) {
+        final ImageButton september2 = findViewById(R.id.september2);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(september2, "september2", 9, firstSelected, secondSelected);
+    }
+    public void clickOctober2 (View v) {
+        final ImageButton october2 = findViewById(R.id.october2);
+
+        final ImageView firstSelected = findViewById(R.id.select);
+        final ImageView secondSelected = findViewById(R.id.select2);
+        EachMonthClicked(october2, "october2", 10, firstSelected, secondSelected);
     }
 }
