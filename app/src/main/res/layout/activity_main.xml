@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#536E28"
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".MainActivity">
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_weight="6.4"
+        android:layout_weight="6.45"
         android:background="#536E28"
         android:gravity="center"
         android:orientation="vertical">
@@ -273,72 +273,6 @@
 
 
                     <ImageButton
-                        android:id="@+id/imageButton6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:background="#00FFFFFF"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/june1" />
-
-                    <ImageButton
-                        android:id="@+id/imageButton7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:background="#00FFFFFF"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/july1" />
-
-                    <ImageButton
-                        android:id="@+id/imageButton8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:background="#00FFFFFF"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/august1" />
-
-                    <ImageButton
-                        android:id="@+id/imageButton9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:background="#00FFFFFF"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/september1" />
-
-                    <ImageButton
-                        android:id="@+id/imageButton10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:background="#00FFFFFF"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/october1" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/thirdLinear"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1">
-
-
-                    <ImageButton
                         android:id="@+id/imageButton11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -392,6 +326,72 @@
                         android:background="#00FFFFFF"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/may2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/thirdLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/june1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/july1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/august1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/september1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/october1" />
 
                 </LinearLayout>
 
@@ -470,10 +470,12 @@
 
     <Button
         android:id="@+id/check_button"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="0dp"
-        android:layout_weight="0.6"
+        android:layout_gravity="center"
+        android:layout_weight="0.55"
         android:background="#324B18"
+        android:gravity="center"
         android:text="족보 확인"
         android:textColor="#ffffff"
         android:textSize="22sp" />

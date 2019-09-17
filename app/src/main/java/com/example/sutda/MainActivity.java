@@ -1,5 +1,6 @@
 package com.example.sutda;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
@@ -26,7 +27,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // set orientation to only portrait
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
+
 
         final Button checkButton = findViewById(R.id.check_button);
         final TextView resultText = findViewById(R.id.result);
@@ -80,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         list.setVisibility(View.INVISIBLE);
         resultText.setSelected(true);
 
-        // checkButton clicked
+        // clicked the checkButton
         checkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -464,7 +468,7 @@ public class MainActivity extends AppCompatActivity {
                     firstImageButton.setAlpha(255);
                     clickCount -= 1;
                     sum -= firstScore;
-                    nums[0] = " ";;
+                    nums[0] = " ";
                     firstImageButton.setEnabled(true);
                     firstSelected.setEnabled(false);
                     first = 1; // like second time
@@ -482,7 +486,7 @@ public class MainActivity extends AppCompatActivity {
                     nums[1] = " ";
                     secondImageButton.setEnabled(true);
                     secondSelected.setEnabled(false);
-                    first = 1; // like second time
+                    first = 1; // like first time
                 }
                 else if (clickCount == 2) {
                     secondSelected.setImageResource(R.drawable.trans2);
