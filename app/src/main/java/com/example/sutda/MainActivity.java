@@ -94,181 +94,152 @@ public class MainActivity extends AppCompatActivity {
 
                     if (sum == 2) {
                         resultText.setText("삥땡");
+                        dd.setTextColor(Color.RED);
                     } else if (sum == 3) {
                         resultText.setText("알리");
+                        al.setTextColor(Color.RED);
                     } else if (sum == 4) {
                         if (nums[0].equals("february1") || nums[0].equals("february2")) {
                             resultText.setText("이땡");
+                            dd.setTextColor(Color.RED);
                         } else if ((nums[0].equals("january1")) && nums[1].equals("march1") || (nums[1].equals("january1")) && nums[0].equals("march1")) {
                             resultText.setText("일삼광땡");
+                            gd13.setTextColor(Color.RED);
                         } else {
                             resultText.setText("사끗");
+                            gg.setTextColor(Color.RED);
                         }
                     } else if (sum == 5) {
                         if ((nums[0].equals("january1") || nums[0].equals("january2")) || (nums[0].equals("april1") || nums[0].equals("april2"))) {
                             resultText.setText("독사");
+                            ds.setTextColor(Color.RED);
                         } else {
                             resultText.setText("오끗");
+                            gg.setTextColor(Color.RED);
                         }
                     } else if (sum == 6) {
                         if (nums[0].equals("march1") || nums[0].equals("march2")) {
                             resultText.setText("삼땡");
+                            dd.setTextColor(Color.RED);
                         } else {
                             resultText.setText("육끗");
+                            gg.setTextColor(Color.RED);
                         }
                     } else if (sum == 7) {
                         resultText.setText("칠끗");
+                        gg.setTextColor(Color.RED);
                     } else if (sum == 8) {
                         if (nums[0].equals("april1") || nums[0].equals("april2")) {
                             resultText.setText("사땡");
+                            dd.setTextColor(Color.RED);
                         } else {
                             resultText.setText("팔끗");
+                            gg.setTextColor(Color.RED);
                         }
                     } else if (sum == 9) {
                         if ((nums[0].equals("january1") && nums[1].equals("august1")) || nums[0].equals("august1") && nums[1].equals("january1")) {
                             resultText.setText("일팔광땡");
+                            gd18.setTextColor(Color.RED);
                         } else {
                             resultText.setText("갑오");
+                            go.setTextColor(Color.RED);
                         }
                     } else if (sum == 10) {
                         if (nums[0].equals("may1") || nums[0].equals("may2")) {
                             resultText.setText("오땡");
+                            dd.setTextColor(Color.RED);
                         } else if ((nums[0].equals("april1") || nums[0].equals("april2")) || (nums[0].equals("june1") || nums[0].equals("june2"))) {
                             resultText.setText("세륙");
+                            sl.setTextColor(Color.RED);
                         } else if ((nums[0].equals("january1") || nums[0].equals("january2")) || (nums[0].equals("september1") || nums[0].equals("september2"))) {
                             resultText.setText("구삥");
+                            gb.setTextColor(Color.RED);
                         } else if ((nums[0].equals("march1") || nums[0].equals("march2")) || (nums[0].equals("july1") || nums[0].equals("july2"))) {
                             resultText.setText("땡잡이");
+                            tg.setTextColor(Color.RED);
                         } else {
                             resultText.setText("망통");
+                            mt.setTextColor(Color.RED);
                         }
                     } else if (sum == 11) {
                         if ((nums[0].equals("march1") && nums[1].equals("august1")) || nums[0].equals("august1") && nums[1].equals("march1")) {
                             resultText.setText("삼팔광땡");
+                            gd38.setTextColor(Color.RED);
                         } else if ((nums[0].equals("january1") || nums[0].equals("january2")) || (nums[0].equals("october1") || nums[0].equals("october2"))) {
                             resultText.setText("장삥");
+                            jb.setTextColor(Color.RED);
                         } else if ((nums[0].equals("april1") && nums[1].equals("july1")) || nums[0].equals("july1") && nums[1].equals("april1")) {
                             resultText.setText("암행어사");
+                            ah.setTextColor(Color.RED);
                         } else {
                             resultText.setText("일끗");
+                            gg.setTextColor(Color.RED);
                         }
                     } else if (sum == 12) {
                         if (nums[0].equals("june1") || nums[0].equals("june2")) {
                             resultText.setText("육땡");
+                            dd.setTextColor(Color.RED);
                         } else {
                             resultText.setText("이끗");
+                            gg.setTextColor(Color.RED);
                         }
                     } else if (sum == 13) {
                         if ((nums[0].equals("april1") || nums[0].equals("april2")) || (nums[0].equals("september1") || nums[0].equals("september2"))) {
                             if ((nums[0].equals("april1") && nums[1].equals("september1")) || (nums[0].equals("september1") && nums[1].equals("april1"))) {
                                 resultText.setText("멍텅구리 구사");
+                                mg.setTextColor(Color.RED);
                             } else {
                                 resultText.setText("구사");
+                                gs.setTextColor(Color.RED);
                             }
                         } else {
                             resultText.setText("삼끗");
+                            gg.setTextColor(Color.RED);
                         }
                     } else if (sum == 14) {
                         if (nums[0].equals("july1") || nums[0].equals("july2")) {
                             resultText.setText("칠땡");
+                            dd.setTextColor(Color.RED);
                         } else if ((nums[0].equals("april1") || nums[0].equals("april2")) || (nums[0].equals("october1") || nums[0].equals("october2"))) {
                             resultText.setText("장사");
+                            js.setTextColor(Color.RED);
                         } else {
                             resultText.setText("사끗");
+                            gg.setTextColor(Color.RED);
                         }
                     } else if (sum == 15) {
                         resultText.setText("오끗");
+                        gg.setTextColor(Color.RED);
                     } else if (sum == 16) {
                         if (nums[0].equals("august1") || nums[0].equals("august2")) {
                             resultText.setText("팔땡");
+                            dd.setTextColor(Color.RED);
                         } else {
                             resultText.setText("육끗");
+                            gg.setTextColor(Color.RED);
                         }
                     } else if (sum == 17) {
                         resultText.setText("칠끗");
+                        gg.setTextColor(Color.RED);
                     } else if (sum == 18) {
                         if (nums[0].equals("september1") || nums[0].equals("september2")) {
                             resultText.setText("구땡");
+                            dd.setTextColor(Color.RED);
                         } else {
                             resultText.setText("팔끗");
+                            gg.setTextColor(Color.RED);
                         }
                     } else if (sum == 19) {
                         resultText.setText("갑오");
+                        go.setTextColor(Color.RED);
                     } else {
                         resultText.setText("장땡");
+                        dd.setTextColor(Color.RED);
                     }
 
                     matrixLinear.setVisibility(View.INVISIBLE);
                     list.setVisibility(View.VISIBLE);
-                    String name = resultText.getText().toString();
 
-                    if (name.equals("삼팔광땡")) {
-                        gd38.setTextColor(Color.RED);
-                    } else if (name.equals("일팔광땡")) {
-                        gd18.setTextColor(Color.RED);
-                    } else if (name.equals("일삼광땡")) {
-                        gd13.setTextColor(Color.RED);
-                    } else if (name.equals("장땡")) {
-                        dd.setTextColor(Color.RED);
-                    } else if (name.equals("구땡")) {
-                        dd.setTextColor(Color.RED);
-                    } else if (name.equals("팔땡")) {
-                        dd.setTextColor(Color.RED);
-                    } else if (name.equals("칠땡")) {
-                        dd.setTextColor(Color.RED);
-                    } else if (name.equals("육땡")) {
-                        dd.setTextColor(Color.RED);
-                    } else if (name.equals("오땡")) {
-                        dd.setTextColor(Color.RED);
-                    } else if (name.equals("사땡")) {
-                        dd.setTextColor(Color.RED);
-                    } else if (name.equals("삼땡")) {
-                        dd.setTextColor(Color.RED);
-                    } else if (name.equals("이땡")) {
-                        dd.setTextColor(Color.RED);
-                    } else if (name.equals("삥땡")) {
-                        dd.setTextColor(Color.RED);
-                    } else if (name.equals("알리")) {
-                        al.setTextColor(Color.RED);
-                    } else if (name.equals("독사")) {
-                        ds.setTextColor(Color.RED);
-                    } else if (name.equals("구삥")) {
-                        gb.setTextColor(Color.RED);
-                    } else if (name.equals("장삥")) {
-                        jb.setTextColor(Color.RED);
-                    } else if (name.equals("장사")) {
-                        js.setTextColor(Color.RED);
-                    } else if (name.equals("세륙")) {
-                        sl.setTextColor(Color.RED);
-                    } else if (name.equals("갑오")) {
-                        go.setTextColor(Color.RED);
-                    } else if (name.equals("팔끗")) {
-                        gg.setTextColor(Color.RED);
-                    } else if (name.equals("칠끗")) {
-                        gg.setTextColor(Color.RED);
-                    } else if (name.equals("육끗")) {
-                        gg.setTextColor(Color.RED);
-                    } else if (name.equals("오끗")) {
-                        gg.setTextColor(Color.RED);
-                    } else if (name.equals("사끗")) {
-                        gg.setTextColor(Color.RED);
-                    } else if (name.equals("삼끗")) {
-                        gg.setTextColor(Color.RED);
-                    } else if (name.equals("이끗")) {
-                        gg.setTextColor(Color.RED);
-                    } else if (name.equals("일끗")) {
-                        gg.setTextColor(Color.RED);
-                    } else if (name.equals("망통")) {
-                        mt.setTextColor(Color.RED);
-                    } else if (name.equals("암행어사")) {
-                        ah.setTextColor(Color.RED);
-                    } else if (name.equals("땡잡이")) {
-                        tg.setTextColor(Color.RED);
-                    } else if (name.equals("멍텅구리 구사")) {
-                        mg.setTextColor(Color.RED);
-                    } else if (name.equals("구사")) {
-                        gs.setTextColor(Color.RED);
-                    }
                     // initialization
                     checkButton.setText("돌아가기");
                     sum = 0;
@@ -329,127 +300,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        // each month clicked
-//        january1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(january1, "january1", 1, firstSelected, secondSelected);
-//            }
-//        });
-//        february1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(february1, "february1", 2, firstSelected, secondSelected);
-//            }
-//        });
-//        march1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(march1, "march1", 3, firstSelected, secondSelected);
-//            }
-//        });
-//        april1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(april1, "april1", 4, firstSelected, secondSelected);
-//            }
-//        });
-//        may1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(may1, "may1", 5, firstSelected, secondSelected);
-//            }
-//        });
-//        june1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(june1, "june1", 6, firstSelected, secondSelected);
-//            }
-//        });
-//        july1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(july1, "july1", 7, firstSelected, secondSelected);
-//            }
-//        });
-//        august1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(august1, "august1", 8, firstSelected, secondSelected);
-//            }
-//        });
-//        september1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(september1, "september1", 9, firstSelected, secondSelected);
-//            }
-//        });
-//        october1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(october1, "october1", 10, firstSelected, secondSelected);
-//            }
-//        });
-//        january2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(january2, "january2", 1, firstSelected, secondSelected);
-//            }
-//        });
-//        february2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(february2, "february2", 2, firstSelected, secondSelected);
-//            }
-//        });
-//        march2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(march2, "march2", 3, firstSelected, secondSelected);
-//            }
-//        });
-//        april2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(april2, "april2", 4, firstSelected, secondSelected);
-//            }
-//        });
-//        may2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(may2, "may2", 5, firstSelected, secondSelected);
-//            }
-//        });
-//        june2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(june2, "june2", 6, firstSelected, secondSelected);
-//            }
-//        });
-//        july2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(july2, "july2", 7, firstSelected, secondSelected);
-//            }
-//        });
-//        august2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(august2, "august2", 8, firstSelected, secondSelected);
-//            }
-//        });
-//        september2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(september2, "september2", 9, firstSelected, secondSelected);
-//            }
-//        });
-//        october2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                EachMonthClicked(october2, "october2", 10, firstSelected, secondSelected);
-//            }
-//        });
         firstSelected.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
