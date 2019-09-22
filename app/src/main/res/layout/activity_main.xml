@@ -504,6 +504,7 @@
             android:layout_gravity="center"
             android:layout_weight="0.9"
             android:background="#324B18"
+            android:foreground="?selectableItemBackground"
             android:gravity="center"
             android:text="족보 확인"
             android:textColor="#ffffff"
