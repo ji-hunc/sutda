@@ -36,6 +36,7 @@
                 android:orientation="vertical">
 
                 <ScrollView
+                    android:id="@+id/listScroll"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
@@ -51,137 +52,265 @@
                             android:id="@+id/gd38"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="삼팔광땡"
+                            android:text="3·8 광땡"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/gd18"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="일팔광땡"
+                            android:text="1·8 광땡"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/gd13"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="일삼광땡"
+                            android:text="1·3 광땡"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
-                            android:id="@+id/dd"
+                            android:id="@+id/dd10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="(장~삥) 땡"
+                            android:text="장땡 (10땡)"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/dd9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/dd8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/dd7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/dd6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/dd5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/dd4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/dd3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/dd2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/dd1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1땡"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/al"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="알리"
+                            android:text="알리 (1·2)"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/ds"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="독사"
+                            android:text="독사 (1·4)"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/gb"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="구삥"
+                            android:text="구삥 (9·1)"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/jb"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="장삥"
+                            android:text="장삥 (10·1)"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/js"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="장사"
+                            android:text="장사 (10·4)"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/sl"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="세륙"
+                            android:text="세륙 (4·6)"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/go"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="갑오"
+                            android:text="갑오 (9끗)"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
-                            android:id="@+id/gg"
+                            android:id="@+id/gg8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="(팔~일) 끗"
+                            android:text="8끗"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/gg7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7끗"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/gg6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6끗"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/gg5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5끗"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/gg4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4끗"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/gg3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3끗"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/gg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2끗"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/gg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1끗"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/mt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="망통"
+                            android:text="망통 (0끗)"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/ah"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="암행어사"
+                            android:text="4·7 암행어사"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/tg"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="땡잡이"
+                            android:text="3·7 땡잡이"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/mg"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="멍텅구리 구사 (재경기)"
+                            android:text="멍텅구리 구사"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                         <TextView
                             android:id="@+id/gs"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="구사 (재경기)"
+                            android:text="구사 (9·4)"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
+                            android:textSize="19sp" />
 
                     </LinearLayout>
                 </ScrollView>

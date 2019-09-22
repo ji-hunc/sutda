@@ -3,6 +3,7 @@ package com.example.sutda;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
 
+        final ScrollView listScroll = findViewById(R.id.listScroll);
 
         final Button checkButton = findViewById(R.id.check_button);
         final TextView resultText = findViewById(R.id.result);
@@ -65,7 +68,16 @@ public class MainActivity extends AppCompatActivity {
         final TextView gd38 = findViewById(R.id.gd38);
         final TextView gd18 = findViewById(R.id.gd18);
         final TextView gd13 = findViewById(R.id.gd13);
-        final TextView dd = findViewById(R.id.dd);
+        final TextView dd10 = findViewById(R.id.dd10);
+        final TextView dd9 = findViewById(R.id.dd9);
+        final TextView dd8 = findViewById(R.id.dd8);
+        final TextView dd7 = findViewById(R.id.dd7);
+        final TextView dd6 = findViewById(R.id.dd6);
+        final TextView dd5 = findViewById(R.id.dd5);
+        final TextView dd4 = findViewById(R.id.dd4);
+        final TextView dd3 = findViewById(R.id.dd3);
+        final TextView dd2 = findViewById(R.id.dd2);
+        final TextView dd1 = findViewById(R.id.dd1);
         final TextView al = findViewById(R.id.al);
         final TextView ds = findViewById(R.id.ds);
         final TextView gb = findViewById(R.id.gb);
@@ -73,7 +85,14 @@ public class MainActivity extends AppCompatActivity {
         final TextView js = findViewById(R.id.js);
         final TextView sl = findViewById(R.id.sl);
         final TextView go = findViewById(R.id.go);
-        final TextView gg = findViewById(R.id.gg);
+        final TextView gg8 = findViewById(R.id.gg8);
+        final TextView gg7 = findViewById(R.id.gg7);
+        final TextView gg6 = findViewById(R.id.gg6);
+        final TextView gg5 = findViewById(R.id.gg5);
+        final TextView gg4 = findViewById(R.id.gg4);
+        final TextView gg3 = findViewById(R.id.gg3);
+        final TextView gg2 = findViewById(R.id.gg2);
+        final TextView gg1 = findViewById(R.id.gg1);
         final TextView mt = findViewById(R.id.mt);
         final TextView ah = findViewById(R.id.ah);
         final TextView tg = findViewById(R.id.tg);
@@ -93,148 +112,187 @@ public class MainActivity extends AppCompatActivity {
                     resultText.setVisibility(View.VISIBLE);
 
                     if (sum == 2) {
-                        resultText.setText("삥땡");
-                        dd.setTextColor(Color.RED);
+                        resultText.setText("1땡");
+                        dd1.setTextColor(Color.RED);
+                        scrollToView(dd1, listScroll, 0);
                     } else if (sum == 3) {
                         resultText.setText("알리");
                         al.setTextColor(Color.RED);
+                        scrollToView(al, listScroll, 0);
                     } else if (sum == 4) {
                         if (nums[0].equals("february1") || nums[0].equals("february2")) {
-                            resultText.setText("이땡");
-                            dd.setTextColor(Color.RED);
+                            resultText.setText("2땡");
+                            scrollToView(dd2, listScroll, 0);
+                            dd2.setTextColor(Color.RED);
                         } else if ((nums[0].equals("january1")) && nums[1].equals("march1") || (nums[1].equals("january1")) && nums[0].equals("march1")) {
-                            resultText.setText("일삼광땡");
+                            resultText.setText("1·3광땡");
                             gd13.setTextColor(Color.RED);
+                            scrollToView(gd13, listScroll, 0);
                         } else {
-                            resultText.setText("사끗");
-                            gg.setTextColor(Color.RED);
+                            resultText.setText("4끗");
+                            gg4.setTextColor(Color.RED);
+                            scrollToView(gg4, listScroll, 0);
                         }
                     } else if (sum == 5) {
                         if ((nums[0].equals("january1") || nums[0].equals("january2")) || (nums[0].equals("april1") || nums[0].equals("april2"))) {
                             resultText.setText("독사");
                             ds.setTextColor(Color.RED);
+                            scrollToView(ds, listScroll, 0);
                         } else {
-                            resultText.setText("오끗");
-                            gg.setTextColor(Color.RED);
+                            resultText.setText("5끗");
+                            gg5.setTextColor(Color.RED);
+                            scrollToView(gg5, listScroll, 0);
                         }
                     } else if (sum == 6) {
                         if (nums[0].equals("march1") || nums[0].equals("march2")) {
-                            resultText.setText("삼땡");
-                            dd.setTextColor(Color.RED);
+                            resultText.setText("3땡");
+                            dd3.setTextColor(Color.RED);
+                            scrollToView(dd3, listScroll, 0);
                         } else {
-                            resultText.setText("육끗");
-                            gg.setTextColor(Color.RED);
+                            resultText.setText("6끗");
+                            gg6.setTextColor(Color.RED);
+                            scrollToView(gg6, listScroll, 0);
                         }
                     } else if (sum == 7) {
-                        resultText.setText("칠끗");
-                        gg.setTextColor(Color.RED);
+                        resultText.setText("7끗");
+                        gg7.setTextColor(Color.RED);
+                        scrollToView(gg7, listScroll, 0);
                     } else if (sum == 8) {
                         if (nums[0].equals("april1") || nums[0].equals("april2")) {
-                            resultText.setText("사땡");
-                            dd.setTextColor(Color.RED);
+                            resultText.setText("4땡");
+                            dd4.setTextColor(Color.RED);
+                            scrollToView(dd4, listScroll, 0);
                         } else {
-                            resultText.setText("팔끗");
-                            gg.setTextColor(Color.RED);
+                            resultText.setText("8끗");
+                            gg8.setTextColor(Color.RED);
+                            scrollToView(gg8, listScroll, 0);
                         }
                     } else if (sum == 9) {
                         if ((nums[0].equals("january1") && nums[1].equals("august1")) || nums[0].equals("august1") && nums[1].equals("january1")) {
-                            resultText.setText("일팔광땡");
+                            resultText.setText("1·8광땡");
                             gd18.setTextColor(Color.RED);
+                            scrollToView(gd18, listScroll, 0);
                         } else {
                             resultText.setText("갑오");
                             go.setTextColor(Color.RED);
+                            scrollToView(go, listScroll, 0);
                         }
                     } else if (sum == 10) {
                         if (nums[0].equals("may1") || nums[0].equals("may2")) {
-                            resultText.setText("오땡");
-                            dd.setTextColor(Color.RED);
+                            resultText.setText("5땡");
+                            dd5.setTextColor(Color.RED);
+                            scrollToView(dd5, listScroll, 0);
                         } else if ((nums[0].equals("april1") || nums[0].equals("april2")) || (nums[0].equals("june1") || nums[0].equals("june2"))) {
                             resultText.setText("세륙");
                             sl.setTextColor(Color.RED);
+                            scrollToView(sl, listScroll, 0);
                         } else if ((nums[0].equals("january1") || nums[0].equals("january2")) || (nums[0].equals("september1") || nums[0].equals("september2"))) {
                             resultText.setText("구삥");
                             gb.setTextColor(Color.RED);
+                            scrollToView(gb, listScroll, 0);
                         } else if ((nums[0].equals("march1") || nums[0].equals("march2")) || (nums[0].equals("july1") || nums[0].equals("july2"))) {
                             resultText.setText("땡잡이");
                             tg.setTextColor(Color.RED);
+                            scrollToView(tg, listScroll, 0);
                         } else {
                             resultText.setText("망통");
                             mt.setTextColor(Color.RED);
+                            scrollToView(mt, listScroll, 0);
                         }
                     } else if (sum == 11) {
                         if ((nums[0].equals("march1") && nums[1].equals("august1")) || nums[0].equals("august1") && nums[1].equals("march1")) {
-                            resultText.setText("삼팔광땡");
+                            resultText.setText("3·8광땡");
                             gd38.setTextColor(Color.RED);
+                            scrollToView(gd38, listScroll, 0);
                         } else if ((nums[0].equals("january1") || nums[0].equals("january2")) || (nums[0].equals("october1") || nums[0].equals("october2"))) {
                             resultText.setText("장삥");
                             jb.setTextColor(Color.RED);
+                            scrollToView(jb, listScroll, 0);
                         } else if ((nums[0].equals("april1") && nums[1].equals("july1")) || nums[0].equals("july1") && nums[1].equals("april1")) {
                             resultText.setText("암행어사");
                             ah.setTextColor(Color.RED);
+                            scrollToView(ah, listScroll, 0);
                         } else {
-                            resultText.setText("일끗");
-                            gg.setTextColor(Color.RED);
+                            resultText.setText("1끗");
+                            gg1.setTextColor(Color.RED);
+                            scrollToView(gg1, listScroll, 0);
                         }
                     } else if (sum == 12) {
                         if (nums[0].equals("june1") || nums[0].equals("june2")) {
-                            resultText.setText("육땡");
-                            dd.setTextColor(Color.RED);
+                            resultText.setText("6땡");
+                            dd6.setTextColor(Color.RED);
+                            scrollToView(dd6, listScroll, 0);
                         } else {
-                            resultText.setText("이끗");
-                            gg.setTextColor(Color.RED);
+                            resultText.setText("2끗");
+                            gg2.setTextColor(Color.RED);
+                            scrollToView(gg2, listScroll, 0);
                         }
                     } else if (sum == 13) {
                         if ((nums[0].equals("april1") || nums[0].equals("april2")) || (nums[0].equals("september1") || nums[0].equals("september2"))) {
                             if ((nums[0].equals("april1") && nums[1].equals("september1")) || (nums[0].equals("september1") && nums[1].equals("april1"))) {
                                 resultText.setText("멍텅구리 구사");
                                 mg.setTextColor(Color.RED);
+                                scrollToView(mg, listScroll, 0);
                             } else {
                                 resultText.setText("구사");
                                 gs.setTextColor(Color.RED);
+                                scrollToView(gs, listScroll, 0);
                             }
                         } else {
-                            resultText.setText("삼끗");
-                            gg.setTextColor(Color.RED);
+                            resultText.setText("3끗");
+                            gg3.setTextColor(Color.RED);
+                            scrollToView(gg3, listScroll, 0);
                         }
                     } else if (sum == 14) {
                         if (nums[0].equals("july1") || nums[0].equals("july2")) {
-                            resultText.setText("칠땡");
-                            dd.setTextColor(Color.RED);
+                            resultText.setText("7땡");
+                            dd7.setTextColor(Color.RED);
+                            scrollToView(dd7, listScroll, 0);
                         } else if ((nums[0].equals("april1") || nums[0].equals("april2")) || (nums[0].equals("october1") || nums[0].equals("october2"))) {
                             resultText.setText("장사");
                             js.setTextColor(Color.RED);
+                            scrollToView(js, listScroll, 0);
                         } else {
-                            resultText.setText("사끗");
-                            gg.setTextColor(Color.RED);
+                            resultText.setText("4끗");
+                            gg4.setTextColor(Color.RED);
+                            scrollToView(gg4, listScroll, 0);
                         }
                     } else if (sum == 15) {
-                        resultText.setText("오끗");
-                        gg.setTextColor(Color.RED);
+                        resultText.setText("5끗");
+                        gg5.setTextColor(Color.RED);
+                        scrollToView(gg5, listScroll, 0);
                     } else if (sum == 16) {
                         if (nums[0].equals("august1") || nums[0].equals("august2")) {
-                            resultText.setText("팔땡");
-                            dd.setTextColor(Color.RED);
+                            resultText.setText("8땡");
+                            dd8.setTextColor(Color.RED);
+                            scrollToView(dd8, listScroll, 0);
                         } else {
-                            resultText.setText("육끗");
-                            gg.setTextColor(Color.RED);
+                            resultText.setText("6끗");
+                            gg6.setTextColor(Color.RED);
+                            scrollToView(gg6, listScroll, 0);
                         }
                     } else if (sum == 17) {
-                        resultText.setText("칠끗");
-                        gg.setTextColor(Color.RED);
+                        resultText.setText("7끗");
+                        gg7.setTextColor(Color.RED);
+                        scrollToView(gg7, listScroll, 0);
                     } else if (sum == 18) {
                         if (nums[0].equals("september1") || nums[0].equals("september2")) {
-                            resultText.setText("구땡");
-                            dd.setTextColor(Color.RED);
+                            resultText.setText("9땡");
+                            dd9.setTextColor(Color.RED);
+                            scrollToView(dd9, listScroll, 0);
                         } else {
-                            resultText.setText("팔끗");
-                            gg.setTextColor(Color.RED);
+                            resultText.setText("8끗");
+                            gg8.setTextColor(Color.RED);
+                            scrollToView(gg8, listScroll, 0);
                         }
                     } else if (sum == 19) {
                         resultText.setText("갑오");
                         go.setTextColor(Color.RED);
+                        scrollToView(go, listScroll, 0);
                     } else {
                         resultText.setText("장땡");
-                        dd.setTextColor(Color.RED);
+                        dd10.setTextColor(Color.RED);
+                        scrollToView(dd10, listScroll, 0);
                     }
 
                     matrixLinear.setVisibility(View.INVISIBLE);
@@ -278,7 +336,16 @@ public class MainActivity extends AppCompatActivity {
                     gd38.setTextColor(Color.WHITE);
                     gd18.setTextColor(Color.WHITE);
                     gd13.setTextColor(Color.WHITE);
-                    dd.setTextColor(Color.WHITE);
+                    dd10.setTextColor(Color.WHITE);
+                    dd9.setTextColor(Color.WHITE);
+                    dd8.setTextColor(Color.WHITE);
+                    dd7.setTextColor(Color.WHITE);
+                    dd6.setTextColor(Color.WHITE);
+                    dd5.setTextColor(Color.WHITE);
+                    dd4.setTextColor(Color.WHITE);
+                    dd3.setTextColor(Color.WHITE);
+                    dd2.setTextColor(Color.WHITE);
+                    dd1.setTextColor(Color.WHITE);
                     al.setTextColor(Color.WHITE);
                     ds.setTextColor(Color.WHITE);
                     gb.setTextColor(Color.WHITE);
@@ -286,12 +353,21 @@ public class MainActivity extends AppCompatActivity {
                     js.setTextColor(Color.WHITE);
                     sl.setTextColor(Color.WHITE);
                     go.setTextColor(Color.WHITE);
-                    gg.setTextColor(Color.WHITE);
+                    gg8.setTextColor(Color.WHITE);
+                    gg7.setTextColor(Color.WHITE);
+                    gg6.setTextColor(Color.WHITE);
+                    gg5.setTextColor(Color.WHITE);
+                    gg4.setTextColor(Color.WHITE);
+                    gg3.setTextColor(Color.WHITE);
+                    gg2.setTextColor(Color.WHITE);
+                    gg1.setTextColor(Color.WHITE);
                     mt.setTextColor(Color.WHITE);
                     ah.setTextColor(Color.WHITE);
                     tg.setTextColor(Color.WHITE);
                     mg.setTextColor(Color.WHITE);
                     gs.setTextColor(Color.WHITE);
+
+                    listScroll.scrollTo(0, 0);
 
                     setAllButtonEnabled(january1, february1, march1, april1, may1, june1, july1, august1, september1, october1, january2, february2, march2, april2, may2, june2, july2, august2, september2, october2);
                 }
@@ -568,5 +644,22 @@ public class MainActivity extends AppCompatActivity {
         final ImageView firstSelected = findViewById(R.id.select);
         final ImageView secondSelected = findViewById(R.id.select2);
         EachMonthClicked(october2, "october2", 10, firstSelected, secondSelected);
+    }
+
+
+    public static void scrollToView(View view, final ScrollView scrollView, int count) {
+        if (view != null && view != scrollView) {
+            count += view.getTop();
+            scrollToView((View) view.getParent(), scrollView, count);
+        } else if (scrollView != null) {
+            final int finalCount = count;
+            new Handler().postDelayed(new Runnable() {
+
+                @Override
+                public void run() {
+                    scrollView.smoothScrollTo(0, finalCount);
+                }
+            }, 200);
+        }
     }
 }
