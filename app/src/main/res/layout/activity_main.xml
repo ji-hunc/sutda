@@ -488,17 +488,27 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/check_button"
-        android:layout_width="380dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
         android:layout_weight="0.55"
-        android:background="#324B18"
         android:gravity="center"
-        android:text="족보 확인"
-        android:textColor="#ffffff"
-        android:textSize="22sp" />
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/check_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.9"
+            android:background="#324B18"
+            android:gravity="center"
+            android:text="족보 확인"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
