@@ -1,3 +1,6 @@
+중대한 오류를 못 고쳐서 Sutda2로 이사 갔습니다...
+=
+
 This is Korean Poker android app for beginner
 =
 
