@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_weight="6.45"
+        android:layout_weight="6"
         android:background="#536E28"
         android:gravity="center"
         android:orientation="vertical">
@@ -276,6 +276,14 @@
                             android:layout_height="wrap_content"
                             android:text="망통 (0끗)"
                             android:textColor="#FFFFFF"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/mt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="----특수족보----"
+                            android:textColor="#000000"
                             android:textSize="19sp" />
 
                         <TextView
@@ -640,7 +648,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="3.45"
         android:background="#536E28"
         android:orientation="vertical"
         android:weightSum="10">
@@ -661,6 +669,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="8"
             android:orientation="horizontal">
 
@@ -685,6 +694,7 @@
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/trans2" />
         </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>
