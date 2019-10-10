@@ -194,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
                                 scrollToView(gb, listScroll, 0);
                             } else if ((nums[0].equals("march1") && nums[1].equals("july1")) || (nums[0].equals("july1") || nums[1].equals("march1"))) {
                                 resultText.setText("땡잡이");
-                                tg.setTextColor(Color.MAGENTA);
+                                tg.setTextColor(Color.YELLOW);
                                 scrollToView(tg, listScroll, 0);
                             } else {
                                 resultText.setText("망통");
@@ -215,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
                                 scrollToView(jb, listScroll, 0);
                             } else if ((nums[0].equals("april1") && nums[1].equals("july1")) || nums[0].equals("july1") && nums[1].equals("april1")) {
                                 resultText.setText("암행어사");
-                                ah.setTextColor(Color.MAGENTA);
+                                ah.setTextColor(Color.YELLOW);
                                 scrollToView(ah, listScroll, 0);
                             } else {
                                 resultText.setText("1끗");
@@ -236,11 +236,11 @@ public class MainActivity extends AppCompatActivity {
                             if ((nums[0].equals("april1") || nums[0].equals("april2")) || (nums[0].equals("september1") || nums[0].equals("september2"))) {
                                 if ((nums[0].equals("april1") && nums[1].equals("september1")) || (nums[0].equals("september1") && nums[1].equals("april1"))) {
                                     resultText.setText("멍텅구리 구사");
-                                    mg.setTextColor(Color.MAGENTA);
+                                    mg.setTextColor(Color.YELLOW);
                                     scrollToView(mg, listScroll, 0);
                                 } else {
                                     resultText.setText("구사");
-                                    gs.setTextColor(Color.MAGENTA);
+                                    gs.setTextColor(Color.YELLOW);
                                     scrollToView(gs, listScroll, 0);
                                 }
                             } else {
