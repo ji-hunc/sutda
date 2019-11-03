@@ -3,6 +3,7 @@ package com.example.sutda;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity {
     int sum = 0;
@@ -98,6 +100,12 @@ public class MainActivity extends AppCompatActivity {
         final TextView tg = findViewById(R.id.tg);
         final TextView mg = findViewById(R.id.mg);
         final TextView gs = findViewById(R.id.gs);
+
+        final ImageButton[] imageButtons = {january1, january2, february1, february2, march1, march2, april1, april2,
+                                        may1, may2, june1, june2, july1, july2, august1, august2, september1, september2,
+                                        october1, october2};
+        final TextView[] textViews = {gd38, gd18, gd13, dd10, dd9, dd8, dd7, dd6, dd5, dd4, dd3, dd2, dd1, al, ds, gb,
+                                        jb, js, sl, go, gg8, gg7, gg6, gg5, gg4, gg3, gg2, gg1, mt, ah, tg, mg, gs};
 
 
         list.setVisibility(View.INVISIBLE);
@@ -323,12 +331,12 @@ public class MainActivity extends AppCompatActivity {
                     nums[1] = " ";
                     Toast.makeText(getApplicationContext(), "두개의 패를 선택하세요", Toast.LENGTH_SHORT).show();
 
-                    setAllButtonEnabled(january1, february1, march1, april1, may1, june1, july1, august1, september1, october1, january2, february2, march2, april2, may2, june2, july2, august2, september2, october2);
-                    setAllButtonAlphaTo255(january1, february1, march1, april1, may1, june1, july1, august1, september1, october1, january2, february2, march2, april2, may2, june2, july2, august2, september2, october2);
+                    setAllButtonEnabled(imageButtons);
+                    setAllButtonAlphaTo255(imageButtons);
                 }
 
                 else {
-                    setAllButtonAlphaTo255(january1, february1, march1, april1, may1, june1, july1, august1, september1, october1, january2, february2, march2, april2, may2, june2, july2, august2, september2, october2);
+                    setAllButtonAlphaTo255(imageButtons);
 
                     matrixLinear.setVisibility(View.VISIBLE);
                     list.setVisibility(View.INVISIBLE);
@@ -339,43 +347,11 @@ public class MainActivity extends AppCompatActivity {
                     firstSelected.setImageResource(R.drawable.trans2);
                     secondSelected.setImageResource(R.drawable.trans2);
 
-                    gd38.setTextColor(Color.WHITE);
-                    gd18.setTextColor(Color.WHITE);
-                    gd13.setTextColor(Color.WHITE);
-                    dd10.setTextColor(Color.WHITE);
-                    dd9.setTextColor(Color.WHITE);
-                    dd8.setTextColor(Color.WHITE);
-                    dd7.setTextColor(Color.WHITE);
-                    dd6.setTextColor(Color.WHITE);
-                    dd5.setTextColor(Color.WHITE);
-                    dd4.setTextColor(Color.WHITE);
-                    dd3.setTextColor(Color.WHITE);
-                    dd2.setTextColor(Color.WHITE);
-                    dd1.setTextColor(Color.WHITE);
-                    al.setTextColor(Color.WHITE);
-                    ds.setTextColor(Color.WHITE);
-                    gb.setTextColor(Color.WHITE);
-                    jb.setTextColor(Color.WHITE);
-                    js.setTextColor(Color.WHITE);
-                    sl.setTextColor(Color.WHITE);
-                    go.setTextColor(Color.WHITE);
-                    gg8.setTextColor(Color.WHITE);
-                    gg7.setTextColor(Color.WHITE);
-                    gg6.setTextColor(Color.WHITE);
-                    gg5.setTextColor(Color.WHITE);
-                    gg4.setTextColor(Color.WHITE);
-                    gg3.setTextColor(Color.WHITE);
-                    gg2.setTextColor(Color.WHITE);
-                    gg1.setTextColor(Color.WHITE);
-                    mt.setTextColor(Color.WHITE);
-                    ah.setTextColor(Color.WHITE);
-                    tg.setTextColor(Color.WHITE);
-                    mg.setTextColor(Color.WHITE);
-                    gs.setTextColor(Color.WHITE);
+                    setAllTextViewColorToWhite(textViews);
 
                     listScroll.scrollTo(0, 0);
 
-                    setAllButtonEnabled(january1, february1, march1, april1, may1, june1, july1, august1, september1, october1, january2, february2, march2, april2, may2, june2, july2, august2, september2, october2);
+                    setAllButtonEnabled(imageButtons);
                 }
 
             }
@@ -443,8 +419,8 @@ public class MainActivity extends AppCompatActivity {
             sum += score;
 
             int resId = getResources().getIdentifier(month, "drawable", getPackageName());
-            Drawable image = getResources().getDrawable(resId);
-
+//            Drawable image = getResources().getDrawable(resId);
+            Drawable image = getDrawable(resId);
             if (first == 1) {
                 firstSelect.setImageDrawable(image);
                 firstImageButton = months;
@@ -462,53 +438,22 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
-    void setAllButtonEnabled(ImageButton january1, ImageButton february1, ImageButton march1, ImageButton april1, ImageButton may1, ImageButton june1, ImageButton july1, ImageButton august1, ImageButton september1, ImageButton october1,
-                          ImageButton january2, ImageButton february2, ImageButton march2, ImageButton april2, ImageButton may2, ImageButton june2, ImageButton july2, ImageButton august2, ImageButton september2, ImageButton october2) {
-        january1.setEnabled(true);
-        february1.setEnabled(true);
-        march1.setEnabled(true);
-        april1.setEnabled(true);
-        may1.setEnabled(true);
-        june1.setEnabled(true);
-        july1.setEnabled(true);
-        august1.setEnabled(true);
-        september1.setEnabled(true);
-        october1.setEnabled(true);
-        january2.setEnabled(true);
-        february2.setEnabled(true);
-        march2.setEnabled(true);
-        april2.setEnabled(true);
-        may2.setEnabled(true);
-        june2.setEnabled(true);
-        july2.setEnabled(true);
-        august2.setEnabled(true);
-        september2.setEnabled(true);
-        october2.setEnabled(true);
+    void setAllTextViewColorToWhite(TextView[] textViews) {
+        for (TextView textView : textViews) {
+            textView.setTextColor(Color.WHITE);
+        }
     }
 
-    void setAllButtonAlphaTo255(ImageButton january1, ImageButton february1, ImageButton march1, ImageButton april1, ImageButton may1, ImageButton june1, ImageButton july1, ImageButton august1, ImageButton september1, ImageButton october1,
-                                ImageButton january2, ImageButton february2, ImageButton march2, ImageButton april2, ImageButton may2, ImageButton june2, ImageButton july2, ImageButton august2, ImageButton september2, ImageButton october2) {
-        january1.setAlpha(255);
-        february1.setAlpha(255);
-        march1.setAlpha(255);
-        april1.setAlpha(255);
-        may1.setAlpha(255);
-        june1.setAlpha(255);
-        july1.setAlpha(255);
-        august1.setAlpha(255);
-        september1.setAlpha(255);
-        october1.setAlpha(255);
-        january2.setAlpha(255);
-        february2.setAlpha(255);
-        march2.setAlpha(255);
-        april2.setAlpha(255);
-        may2.setAlpha(255);
-        june2.setAlpha(255);
-        july2.setAlpha(255);
-        august2.setAlpha(255);
-        september2.setAlpha(255);
-        october2.setAlpha(255);
+    void setAllButtonEnabled(ImageButton[] imageButtons) {
+        for (ImageButton imageButton : imageButtons) {
+            imageButton.setEnabled(true);
+        }
+    }
+
+    void setAllButtonAlphaTo255(ImageButton[] imageButtons) {
+        for (ImageButton imageButton : imageButtons) {
+            imageButton.setAlpha(255);
+        }
     }
 
     public void clickJanuary1 (View v) {
