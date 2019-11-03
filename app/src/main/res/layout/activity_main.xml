@@ -348,8 +348,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickJanuary1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/january1" />
 
@@ -360,8 +360,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickFebruary1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/february1" />
 
@@ -372,8 +372,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickMarch1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/march1" />
 
@@ -384,8 +384,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickApril1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/april1" />
 
@@ -396,8 +396,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickMay1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/may1" />
 
@@ -419,8 +419,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickJanuary2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/january2" />
 
@@ -431,8 +431,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickFebruary2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/february2" />
 
@@ -443,8 +443,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickMarch2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/march2" />
 
@@ -455,8 +455,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickApril2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/april2" />
 
@@ -467,8 +467,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickMay2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/may2" />
 
@@ -490,8 +490,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickJune1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/june1" />
 
@@ -502,8 +502,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickJuly1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/july1" />
 
@@ -514,8 +514,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickAugust1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/august1" />
 
@@ -526,8 +526,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickSeptember1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/september1" />
 
@@ -538,8 +538,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickOctober1"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/october1" />
 
@@ -561,8 +561,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickJune2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/june2" />
 
@@ -573,8 +573,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickJuly2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/july2" />
 
@@ -585,8 +585,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickAugust2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/august2" />
 
@@ -597,8 +597,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickSeptember2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/september2" />
 
@@ -609,8 +609,8 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
+                        android:onClick="clickMonth"
                         android:background="#00FFFFFF"
-                        android:onClick="clickOctober2"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/october2" />
 

@@ -16,6 +16,8 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Arrays;
+
 
 public class MainActivity extends AppCompatActivity {
     int sum = 0;
@@ -117,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (sum != 0 && clickCount == 2) {
+                    // checking ranking and view rank list
                     resultText.setVisibility(View.VISIBLE);
 
                     if (sum <= 10) {
@@ -311,9 +314,8 @@ public class MainActivity extends AppCompatActivity {
 
                     matrixLinear.setVisibility(View.INVISIBLE);
                     list.setVisibility(View.VISIBLE);
-
-                    // initialization
                     checkButton.setText("돌아가기");
+
                     sum = 0;
                     first = 1;
                     nums[0] = " ";
@@ -322,36 +324,33 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 else if (sum != 0 && clickCount == 1) {
-                    clickCount = 0;
+                    // when select only one card
                     firstSelected.setImageResource(R.drawable.trans2);
                     secondSelected.setImageResource(R.drawable.trans2);
+                    Toast.makeText(getApplicationContext(), "두개의 패를 선택하세요", Toast.LENGTH_SHORT).show();
+                    setAllButtonsEnabled(imageButtons);
+                    setAllButtonsAlphaTo255(imageButtons);
+
                     sum = 0;
                     first = 1;
                     nums[0] = " ";
                     nums[1] = " ";
-                    Toast.makeText(getApplicationContext(), "두개의 패를 선택하세요", Toast.LENGTH_SHORT).show();
-
-                    setAllButtonEnabled(imageButtons);
-                    setAllButtonAlphaTo255(imageButtons);
+                    clickCount = 0;
                 }
 
                 else {
-                    setAllButtonAlphaTo255(imageButtons);
-
+                    // when clicked the 돌아가기 button
+                    // back to main screen after check rank list
                     matrixLinear.setVisibility(View.VISIBLE);
                     list.setVisibility(View.INVISIBLE);
-
                     checkButton.setText("족보 확인");
                     resultText.setText("패를 선택해 주세요");
-
                     firstSelected.setImageResource(R.drawable.trans2);
                     secondSelected.setImageResource(R.drawable.trans2);
-
-                    setAllTextViewColorToWhite(textViews);
-
                     listScroll.scrollTo(0, 0);
-
-                    setAllButtonEnabled(imageButtons);
+                    setAllButtonsEnabled(imageButtons);
+                    setAllButtonsAlphaTo255(imageButtons);
+                    setAllTextViewsColorToWhite(textViews);
                 }
 
             }
@@ -438,165 +437,92 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-    void setAllTextViewColorToWhite(TextView[] textViews) {
+    void setAllTextViewsColorToWhite(TextView[] textViews) {
         for (TextView textView : textViews) {
             textView.setTextColor(Color.WHITE);
         }
     }
 
-    void setAllButtonEnabled(ImageButton[] imageButtons) {
+    void setAllButtonsEnabled(ImageButton[] imageButtons) {
         for (ImageButton imageButton : imageButtons) {
             imageButton.setEnabled(true);
         }
     }
 
-    void setAllButtonAlphaTo255(ImageButton[] imageButtons) {
+    void setAllButtonsAlphaTo255(ImageButton[] imageButtons) {
         for (ImageButton imageButton : imageButtons) {
             imageButton.setAlpha(255);
         }
     }
 
-    public void clickJanuary1 (View v) {
-        final ImageButton january1 = findViewById(R.id.january1);
-
+    public void clickMonth (View v) {
+        int viewId = v.getId();
+        final ImageButton month = findViewById(viewId);
         final ImageView firstSelected = findViewById(R.id.select);
         final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(january1, "january1", 1, firstSelected, secondSelected);
+        switch (viewId) {
+            case R.id.january1:
+                EachMonthClicked(month, "january1", 1, firstSelected, secondSelected);
+                break;
+            case R.id.january2:
+                EachMonthClicked(month, "january2", 1, firstSelected, secondSelected);
+                break;
+            case R.id.february1:
+                EachMonthClicked(month, "february1", 2, firstSelected, secondSelected);
+                break;
+            case R.id.february2:
+                EachMonthClicked(month, "february2", 2, firstSelected, secondSelected);
+                break;
+            case R.id.march1:
+                EachMonthClicked(month, "march1", 3, firstSelected, secondSelected);
+                break;
+            case R.id.march2:
+                EachMonthClicked(month, "march2", 3, firstSelected, secondSelected);
+                break;
+            case R.id.april1:
+                EachMonthClicked(month, "april1", 4, firstSelected, secondSelected);
+                break;
+            case R.id.april2:
+                EachMonthClicked(month, "april2", 4, firstSelected, secondSelected);
+                break;
+            case R.id.may1:
+                EachMonthClicked(month, "may1", 5, firstSelected, secondSelected);
+                break;
+            case R.id.may2:
+                EachMonthClicked(month, "may2", 5, firstSelected, secondSelected);
+                break;
+            case R.id.june1:
+                EachMonthClicked(month, "june1", 6, firstSelected, secondSelected);
+                break;
+            case R.id.june2:
+                EachMonthClicked(month, "june2", 6, firstSelected, secondSelected);
+                break;
+            case R.id.july1:
+                EachMonthClicked(month, "july1", 7, firstSelected, secondSelected);
+                break;
+            case R.id.july2:
+                EachMonthClicked(month, "july2", 7, firstSelected, secondSelected);
+                break;
+            case R.id.august1:
+                EachMonthClicked(month, "august1", 8, firstSelected, secondSelected);
+                break;
+            case R.id.august2:
+                EachMonthClicked(month, "august2", 8, firstSelected, secondSelected);
+                break;
+            case R.id.september1:
+                EachMonthClicked(month, "september1", 9, firstSelected, secondSelected);
+                break;
+            case R.id.september2:
+                EachMonthClicked(month, "september2", 9, firstSelected, secondSelected);
+                break;
+            case R.id.october1:
+                EachMonthClicked(month, "october1", 10, firstSelected, secondSelected);
+                break;
+            case R.id.october2:
+                EachMonthClicked(month, "october2", 10, firstSelected, secondSelected);
+                break;
+        }
     }
-    public void clickFebruary1 (View v) {
-        final ImageButton february1 = findViewById(R.id.february1);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(february1, "february1", 2, firstSelected, secondSelected);
-    }
-    public void clickMarch1 (View v) {
-        final ImageButton march1 = findViewById(R.id.march1);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(march1, "march1", 3, firstSelected, secondSelected);
-    }
-    public void clickApril1 (View v) {
-        final ImageButton april1 = findViewById(R.id.april1);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(april1, "april1", 4, firstSelected, secondSelected);
-    }
-    public void clickMay1 (View v) {
-        final ImageButton may1 = findViewById(R.id.may1);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(may1, "may1", 5, firstSelected, secondSelected);
-    }
-    public void clickJune1 (View v) {
-        final ImageButton june1 = findViewById(R.id.june1);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(june1, "june1", 6, firstSelected, secondSelected);
-    }
-    public void clickJuly1 (View v) {
-        final ImageButton july1 = findViewById(R.id.july1);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(july1, "july1", 7, firstSelected, secondSelected);
-    }
-    public void clickAugust1 (View v) {
-        final ImageButton august1 = findViewById(R.id.august1);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(august1, "august1", 8, firstSelected, secondSelected);
-    }
-    public void clickSeptember1 (View v) {
-        final ImageButton september1 = findViewById(R.id.september1);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(september1, "september1", 9, firstSelected, secondSelected);
-    }
-    public void clickOctober1 (View v) {
-        final ImageButton october1 = findViewById(R.id.october1);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(october1, "october1", 10, firstSelected, secondSelected);
-    }
-    public void clickJanuary2 (View v) {
-        final ImageButton january2 = findViewById(R.id.january2);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(january2, "january2", 1, firstSelected, secondSelected);
-    }
-    public void clickFebruary2 (View v) {
-        final ImageButton february2 = findViewById(R.id.february2);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(february2, "february2", 2, firstSelected, secondSelected);
-    }
-    public void clickMarch2 (View v) {
-        final ImageButton march2 = findViewById(R.id.march2);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(march2, "march2", 3, firstSelected, secondSelected);
-    }
-    public void clickApril2 (View v) {
-        final ImageButton april2 = findViewById(R.id.april2);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(april2, "april2", 4, firstSelected, secondSelected);
-    }
-    public void clickMay2 (View v) {
-        final ImageButton may2 = findViewById(R.id.may2);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(may2, "may2", 5, firstSelected, secondSelected);
-    }
-    public void clickJune2 (View v) {
-        final ImageButton june2 = findViewById(R.id.june2);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(june2, "june2", 6, firstSelected, secondSelected);
-    }
-    public void clickJuly2 (View v) {
-        final ImageButton july2 = findViewById(R.id.july2);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(july2, "july2", 7, firstSelected, secondSelected);
-    }
-    public void clickAugust2 (View v) {
-        final ImageButton august2 = findViewById(R.id.august2);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(august2, "august2", 8, firstSelected, secondSelected);
-    }
-    public void clickSeptember2 (View v) {
-        final ImageButton september2 = findViewById(R.id.september2);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(september2, "september2", 9, firstSelected, secondSelected);
-    }
-    public void clickOctober2 (View v) {
-        final ImageButton october2 = findViewById(R.id.october2);
-
-        final ImageView firstSelected = findViewById(R.id.select);
-        final ImageView secondSelected = findViewById(R.id.select2);
-        EachMonthClicked(october2, "october2", 10, firstSelected, secondSelected);
-    }
-
 
     public static void scrollToView(View view, final ScrollView scrollView, int count) {
         if (view != null && view != scrollView) {
