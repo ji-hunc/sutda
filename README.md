@@ -15,4 +15,4 @@
 [GitHub](http://github.com)
 PR gogo
 
-search on playstore "Pub:Developer Choi" or here: [Google Play 다운로드](https://play.google.com/store/apps/details?id=com.kookmin.sutda)
+search on playstore "Pub:Deloper Choi" or here: [Google Play 다운로드](https://play.google.com/store/apps/details?id=com.kookmin.sutda)
