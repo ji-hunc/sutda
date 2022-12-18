@@ -13,7 +13,7 @@
 </br>
 [![](https://user-images.githubusercontent.com/52407470/208298847-398a9e14-8404-4bcf-96db-c3ba5825c97c.png)](https://play.google.com/store/apps/details?id=com.kookmin.sutda)
 </br>
-![freepik license](/images/TheMarkdown/markdown-image-tag-sample1.png)
+![freepik license](https://user-images.githubusercontent.com/52407470/208298847-398a9e14-8404-4bcf-96db-c3ba5825c97c.png)
 </br>
 
 ![test]([/images/TheMarkdown/markdown-image-tag-sample1.png](https://user-images.githubusercontent.com/52407470/208298847-398a9e14-8404-4bcf-96db-c3ba5825c97c.png))
